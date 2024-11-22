@@ -29,27 +29,33 @@ mvn spring-boot:run
 
 File Structure
 
-cutoffmarkcalculator/
-│
-├── src/main/
-│   ├── java/com/team5/cutoffmark/
-│   │   ├── CutoffmarkApplication.java       # Main application class
-│   │   ├── domain/student.java              # Student model
-│   │   ├── StudentController/               # Handles HTTP requests
+cutoffmark [boot]
+├── src/main/java
+│   ├── com.team5.couoffmark.domain
+│   │   └── student.java
+│   ├── com.team5.cutoffmark
+│   │   ├── CutoffmarkApplication.java
+│   │   └── StudentController
 │   │       └── StudentController.java
-│   ├── resources/
-│       ├── application.properties           # Application configuration (no database settings)
-│       ├── templates/
-│           ├── index.html                   # Input page for marks
-│           └── result.html                  # Result display page
-│
-├── src/test/
-│   └── java/com/team5/cutoffmark/
-│       └── CutoffmarkApplicationTests.java  # Unit tests for functionality
-│
-├── HELP.md                                  # Auto-generated project help
-├── pom.xml                                  # Maven build file
-└── README.md                                # Project documentation
+│   └── src/main/resources
+│       ├── static
+│       │   ├── p1.jpg
+│       │   └── p2.jpg
+│       ├── templates
+│       │   ├── index.html
+│       │   └── result.html
+│       └── application.properties
+├── src/test/java
+└── target
+    ├── HELP.md
+    ├── mvnw
+    ├── mvnw.cmd
+    ├── bin
+    └── src
 
+
+
+Contributors
+T. Anushri 
 
 This version is more concise and focuses on the key information. Let me know if you'd like to make any more changes!
